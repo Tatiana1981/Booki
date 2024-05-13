@@ -58,10 +58,60 @@ a {
     color: var(--main-bg-color)
 }
 
+/******* NavBar ********/
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+header {
+
+    position: relative;
+    padding: 0 2rem;
+}
+
+
+/******** Hebergements à Marseille *******/
+
+.hebergements-a-Marseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.hebergements-a-Marseille section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.hebergements-marseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .hebergements-and-populaires section {
