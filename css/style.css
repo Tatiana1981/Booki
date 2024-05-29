@@ -123,6 +123,7 @@ header {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-left: 1%;
 }
 
 
@@ -144,9 +145,12 @@ header {
 
 .Marseille-cards .card {
     display: block;
-    margin-top: 33px;
+    margin-top: 1.5%;
     width: 32%;
-    margin-right: 10px;
+    margin-left: 1.5%;
+}
+.Marseille-cards .card:first-child, .Marseille-cards .card:nth-child(4) {
+    margin-left: 0;
 }
 .Marseille-cards .card a {
     display: block;
@@ -223,7 +227,7 @@ header {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {*/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -234,13 +238,11 @@ header {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        
     }
 
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+       
     }
 
     .populaires-cards a {
@@ -254,7 +256,7 @@ header {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+/*}*/
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
