@@ -11,6 +11,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1fdab59135.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
@@ -29,6 +30,40 @@
         </header>
 
         <main>
+            <div class="hebergement-vacances">
+                <section class="found-hebergement-vacances">
+                    <a class="txt-hebergement-vacances">
+                        <h3><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h3>
+                        <h4>En plein centre ville ou en pleine nature</h4>
+                    </a>
+                    <form class="search" action="#" method="get">
+                        <input type="text" class="search-bar"
+                        placeholder="Marseille, France"/>
+                        <button type="submit" class="search-btn">
+                            <strong>Rechercher</strong>
+                        </button>
+
+                    <ul class="filtres">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <li><a href="economique"><strong>Economique</strong></a></li>
+                        <i class="fa-solid fa-person"></i>
+                        <li><a href="familial"><strong>Familial</strong></a></li>
+                        <i class="fa-solid fa-heart"></i>
+                        <li><a href="romantique"><strong>Romantique</strong></a></li>
+                        <i class="fa-solid fa-fire"></i>
+                        <li><a href="nos-pepites"><strong>Nos pépites</strong></a></li>
+                    </ul>   
+                    </form>
+
+                <section class="logements-dispo">
+                    <a class="txt-logement-dispo">
+                        <i class="fa-solid fa-info"></i>
+                        <h4>Plus de 500 logements disopnibles dans cette ville.</h4>
+                    </a>
+                </section>
+
+                </section>
+            </div>
             <div class="hebergement-wrapper">
 
             <div class="hebergements-a-Marseille">
@@ -36,7 +71,6 @@
                 <section class="Marseille">
                     <div class="Marseille-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="Marseille-cards">
                         
@@ -169,7 +203,13 @@
                                     </div>
                                 </a>
                                 </article>
-                           
+                           <section class="text-content">
+                                <div class="txt-afficher-plus">
+                                    <a href="#"><strong>Afficher plus</strong></a>
+
+                                </div>
+
+                           </section>
 
 
                       </div>
@@ -251,7 +291,6 @@
                 <section class="activites">
                     <div class="activites-title">
                         <h2 class="activites-title">Activités à Marseille</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
 
                     <div class="activites-a-Marseille-cards">

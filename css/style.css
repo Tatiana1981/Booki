@@ -67,60 +67,6 @@ a {
     color: var(--main-bg-color)
 }
 
-/******* Footer ******/
-
-.footer {
-    flex-shrink: 0;
-    border-top: 1px dashed #000;
-    width: 100%;
-    background: #f1f1f1;
-    color: #333;
-}
-
-.footer-content {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 0 100px;
-}
-
-.block {
-    width: 25%;
-    margin: 0 30px;
-}
-
-.footer-content h5,
-.footer-a-propos h5,
-.footer-hebergements h5,
-.footer-assistance h5 {
-    font-size: 25px;
-    padding-bottom: 20px;
-}
-
-.a-propos,
-.nos-hebergements,
-.assistance {
-    list-style-type: none;
-}
-
-.a-propos li,
-.nos-hebergements li,
-.assistance li {
-    padding: 2px 0;
-}
-
-.a-propos a,
-.nos-hebergements a,
-.assistance a {
-    text-decoration: none;
-    color: #333;
-}
-
-.liste-services a:hover {
-    color: rgb(3,3,3);
-}
 
 /******* NavBar ********/
 
@@ -132,17 +78,97 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
+.links {
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
 }
+
+.element-style {
+    padding-left: 10px;
+}
+
+
+.a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.a:hover {
+    color: #0065FC;
+}
+
+.logo {
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+
 
 header {
 
     position: relative;
     padding: 0 2rem;
+}
+
+/********* Hebergement vacances  barre de recherche ********/
+
+
+.hebergement-vacances {
+    display: block;
+    padding-top: 5%;
+    padding-left: 1%;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.search-bar {
+    border: none;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 14px;
+
+}
+.search-bar:focus {
+    border: none;
+    outline: none;
+}
+
+.search-bar:focus-within {
+    border: 0.5px solid #0065FC;
+}
+
+.search-btn {
+    width: 10%;
+    border: #0065FC;
+    background-color: #0065FC;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.txt-logement-dispo {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    text-indent: 1rem;
 }
 
 
@@ -229,6 +255,11 @@ header {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.text-content {
+    display: block;
+    margin-top: 10%;
 }
 
 /****** Hebergements ***********/
@@ -348,6 +379,60 @@ header {
     box-sizing: border-box;
 }
 
+/******* Footer ******/
+
+.footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.block {
+    width: 25%;
+    margin: 0 30px;
+}
+
+.footer-content h5,
+.footer-a-propos h5,
+.footer-hebergements h5,
+.footer-assistance h5 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.a-propos,
+.nos-hebergements,
+.assistance {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+.a-propos li,
+.nos-hebergements li,
+.assistance li {
+    padding: 2px 0;
+}
+
+.a-propos a,
+.nos-hebergements a,
+.assistance a {
+    text-decoration: none;
+    color: #333;
+}
+
+.liste-services a:hover {
+    color: rgb(3,3,3);
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
