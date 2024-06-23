@@ -32,35 +32,34 @@
         <main>
             <div class="hebergement-vacances">
                 <section class="found-hebergement-vacances">
-                    <a class="txt-hebergement-vacances">
-                        <h3><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h3>
-                        <h4>En plein centre ville ou en pleine nature</h4>
-                    </a>
+                    <h3><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h3>
+                    <h4>En plein centre ville ou en pleine nature</h4>
                     <form class="search" action="#" method="get">
+                        <label class="search-location" for="search-bar">
+                            <i class="fa-solid fa-location-dot icon-location"></i>
+                        </label>
+                        
                         <input type="text" class="search-bar"
-                        placeholder="Marseille, France"/>
-                        <button type="submit" class="search-btn">
-                            <strong>Rechercher</strong>
-                        </button>
-
-                    <ul class="filtres">
-                        <h4><strong>Filtres</strong></h4>
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <li><a href="economique"><strong>Economique</strong></a></li>
-                        <i class="fa-solid fa-person"></i>
-                        <li><a href="familial"><strong>Familial</strong></a></li>
-                        <i class="fa-solid fa-heart"></i>
-                        <li><a href="romantique"><strong>Romantique</strong></a></li>
-                        <i class="fa-solid fa-fire"></i>
-                        <li><a href="nos-pepites"><strong>Nos pépites</strong></a></li>
-                    </ul>   
+                        placeholder="Marseille, France" id="search-bar"/>
+                        <input type="submit" class="search-btn" value="Rechercher">
+                            
+                
                     </form>
-
+                    <div class="filters">
+                        <h4><strong>Filtres</strong></h4>
+                        <ul class="filtres">
+                            <li><i class="fa-solid fa-money-bill-wave"></i><a href="economique"><strong>Economique</strong></a></li>
+                            <li><i class="fa-solid fa-person"></i><a href="familial"><strong>Familial</strong></a></li>
+                            <li><i class="fa-solid fa-heart"></i><a href="romantique"><strong>Romantique</strong></a></li>
+                            <li><i class="fa-solid fa-fire"></i><a href="nos-pepites"><strong>Nos pépites</strong></a></li>
+                        </ul>  
+                    </div>
+                    
                 <section class="logements-dispo">
-                    <a class="txt-logement-dispo">
+                   
                         <i class="fa-solid fa-info"></i>
                         <h4>Plus de 500 logements disopnibles dans cette ville.</h4>
-                    </a>
+                
                 </section>
 
                 </section>
