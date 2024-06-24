@@ -68,7 +68,7 @@ a {
 }
 
 
-/******* NavBar ********/
+/******* header/NavBar ********/
 
 .navbar {
     width: 100%;
@@ -135,8 +135,30 @@ header {
     list-style-type: none;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 15px;
+    padding-left: 20px;
 }
+
+.filtre {
+    display: block;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 0.5px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+.filters-titre {
+    padding-top: 10px;
+}
+
+.fa-solid {
+    margin: 5px;
+}
+
 .search {
     display: flex;
     
@@ -161,7 +183,6 @@ header {
     padding: 10px;
     font-size: 14px;
     background-color: white;
-    width: 300px;
     border-top: 2px solid var(--main-bg-color);
     border-bottom: 2px solid var(--main-bg-color);
     color: #000;
@@ -191,11 +212,20 @@ header {
     font-weight: bold;
 }
 
-.txt-logement-dispo {
+.logements-dispo {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     align-items: center;
+    text-indent: 1rem;
+    flex-wrap: nowrap;
+}
+
+
+
+.filters {
+    display: flex;
+    flex-direction: row;
     text-indent: 1rem;
 }
 
@@ -222,6 +252,8 @@ header {
 }
 
 /****** Hebergements And Populaires ***********/
+
+
 .hebergement-wrapper {
     display: flex;
 }
@@ -468,7 +500,9 @@ header {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .hebergements {
@@ -497,9 +531,58 @@ header {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .hebergement-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-a-Marseille {
+        width: auto;
+    }
+
+    .activites-a-Marseille {
+        width: auto;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        justify-content: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10rem;
+        padding-top: 10px;
+    }
+
+    .hebergement-vacances {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .hebergement-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* ... */
 }
