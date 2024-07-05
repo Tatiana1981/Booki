@@ -309,7 +309,7 @@ header {
 }
 
 .Marseille-cards .card-content{
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -581,8 +581,23 @@ header {
 
     .hebergement-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
+    .filtres {
+        flex-wrap: wrap;
+    }
+    .footer-content {
+       display: block;
+    }
+    .Marseille-cards, .populaires-cards, .activites-a-Marseille-cards {
+        display: block;
+    }
+    .Marseille-cards .card, .activites-a-Marseille-cards a {
+        width: auto;
+    }
+    .main-container {
+        padding: 0;
+    }
     /* ... */
 }
