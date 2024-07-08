@@ -169,11 +169,7 @@ header {
 }
 
 .filtre:hover {
-    background-color: #0065FC;
-}
-
-.fa-solid:hover {
-    color: #F2F2F2;
+    background-color: #DEEBFF;
 }
 
 .filters-titre {
@@ -627,6 +623,12 @@ header {
 
     .filtres {
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: baseline;
     }
     .filters {
         display: block;
@@ -636,6 +638,7 @@ header {
     }
     .footer-content {
        display: block;
+       padding-top: 20px;
     }
     .Marseille-cards, .populaires-cards, .activites-a-Marseille-cards {
         display: block;
