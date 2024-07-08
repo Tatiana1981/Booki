@@ -141,6 +141,7 @@ header {
     justify-content: flex-start;
     gap: 15px;
     padding-left: 20px;
+    padding-top: 6px;
 }
 
 .filtre {
@@ -148,11 +149,23 @@ header {
     background-color: var(--main-bg-color);
     border-radius: 10px;
     padding-right: 20px;
-    padding-left: 0.5px;
+    
     border-radius: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
    
+}
+.filtre.filtre-info {
+    padding: 3px;
+    width: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+.filtre.filtre-info i {
+    padding: 0;
+}
+.filtre i {
+    padding: 0px 5px 0 20px;
 }
 
 .filtre:hover {
@@ -168,7 +181,7 @@ header {
 }
 
 .fa-solid {
-    margin: 5px;
+    
 }
 
 .search {
@@ -182,11 +195,18 @@ header {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     text-align: center;
-    padding-top: 9px;
+    width: 40px;
 }
 .icon-location {
     color: #000;
-    
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.icon-location::before {
+    position: absolute;
+    top: 13px;
+    left: 13px;
 }
 
 .search-bar {
@@ -226,10 +246,10 @@ header {
 
 .logements-dispo {
     display: flex;
+    gap: 10px;
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    text-indent: 1rem;
     flex-wrap: nowrap;
 }
 
@@ -238,7 +258,6 @@ header {
 .filters {
     display: flex;
     flex-direction: row;
-    text-indent: 1rem;
 }
 
 
@@ -580,9 +599,19 @@ header {
     .links {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        gap: 10rem;
         padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        gap: 0;
+        justify-content: start;
+        width: 100%;
+        align-items: start;
+        padding-left: 0;
+    }
+    .links li {
+        width: 50%;
+        text-align: center;
     }
 
     .hebergement-vacances {
@@ -598,6 +627,12 @@ header {
 
     .filtres {
         flex-wrap: wrap;
+    }
+    .filters {
+        display: block;
+    }
+    .found-hebergement-vacances {
+        padding-left: 10px;
     }
     .footer-content {
        display: block;
