@@ -481,7 +481,6 @@ header {
     display: flex;
     align-items: flex-start;
     background-color: var(--main-bg-color);
-    border-radius: 20px;
 }
 
 .block {
