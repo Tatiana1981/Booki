@@ -212,7 +212,7 @@ header {
 .icon-location::before {
     position: absolute;
     top: 13px;
-    left: 13px;
+    left: 15px;
 }
 
 .search-bar {
@@ -529,6 +529,12 @@ header {
 .liste-services a:hover {
     color: rgb(3,3,3);
 }
+.search-btn .desktop {
+    display: inline;
+}
+.search-btn .mobile {
+    display: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -585,6 +591,17 @@ header {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .search-btn .desktop {
+        display: none;
+    }
+    .search-btn .mobile {
+        display: inline;
+        color: white;
+        font-size: 15px;
+    }
+    .search-btn {
+        width: 40px;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
