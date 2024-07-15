@@ -73,7 +73,6 @@ a {
 .navbar {
     width: 100%;
     max-width: 1200px;
-    height: 60px;
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
@@ -88,11 +87,22 @@ a {
     align-items: flex-end;
     justify-content: space-between;
     gap: 2rem;
+    margin-top: 1px;
 }
 
-.links:hover {
-    color: #0065FC;
+.links a {
+    border-top: 2px solid transparent;
+    display: block;
+    padding-top: 7px;
 }
+.links a.active, .links a:active {
+    border-color: #0065FC;
+}
+.links a:hover {
+    color: #0065FC;
+    border-color: #0065FC;
+}
+ 
 
 .element-style {
     padding-left: 10px;
@@ -580,7 +590,7 @@ header {
         flex-direction: column;
         width: auto;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 20px;
 
     }
 
@@ -594,10 +604,10 @@ header {
     .links {
         display: flex;
         flex-direction: row;
-        padding-top: 10px;
+        padding-top: 20px;
         display: flex;
         flex-direction: row;
-        padding-top: 10px;
+       
         gap: 0;
         justify-content: start;
         width: 100%;
@@ -607,6 +617,20 @@ header {
     .links li {
         width: 50%;
         text-align: center;
+    }
+
+    
+    .links a {
+        border-top: none;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 7px;
+    }
+
+    .hebergements-and-populaires,.hebergements-a-Marseille {
+        border-radius: 0;
+    }
+    .hebergements-a-Marseille {
+        background-color: white;
     }
 
     .hebergement-vacances {
@@ -648,5 +672,39 @@ header {
     .main-container {
         padding: 0;
     }
+    .block {
+        width: 100%;
+        margin: 0;
+        padding-left: 30px;
+    }
+    .Marseille-cards .card {
+        margin-left: 0;
+    }
+    .assistance {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    .img-overflow {
+        height: 150px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .Marseille-cards .img-overflow img {
+        position: relative;
+        top: -45px;
+        width: 100%;
+        height: auto;
+    }
+    .Marseille-cards img {
+        width: 80vw;
+        height: 150px;
+    }
+    .activites-a-Marseille-cards a {
+        margin-left: 0;
+    }
+    .activites-a-Marseille-cards a:nth-child(2),.activites-a-Marseille-cards a:nth-child(3), .activites-a-Marseille-cards a:nth-child(4){
+        margin-left: 0px;
+    }
+    
     /* ... */
 }
