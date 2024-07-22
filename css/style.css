@@ -186,9 +186,6 @@ header {
     padding-top: 10px;
 }
 
-.fa-solid {
-    
-}
 
 .search {
     display: flex;
@@ -212,7 +209,7 @@ header {
 .icon-location::before {
     position: absolute;
     top: 13px;
-    left: 13px;
+    left: 15px;
 }
 
 .search-bar {
@@ -284,9 +281,6 @@ header {
 
 
 
-.hebergements-marseille {
-    
-}
 
 /****** Hebergements And Populaires ***********/
 
@@ -307,11 +301,6 @@ header {
     margin-left: 1%;
 }
 
-
-
-.Marseille {
-    
-}
 
 .Marseille-title {
     display: flex;
@@ -530,6 +519,13 @@ header {
     color: rgb(3,3,3);
 }
 
+.search-btn .desktop {
+    display: inline;
+}
+.search-btn .mobile {
+    display: none;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -540,6 +536,7 @@ header {
         flex-direction: column;
         width: auto;
     }
+    
 
     .hebergements {
         width: 100%;
@@ -585,6 +582,20 @@ header {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .search-btn .desktop {
+        display: none;
+    }
+    .search-btn .mobile {
+        display: inline;
+        color: white;
+        font-size: 15px;
+    }
+    .search-btn {
+        width: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px lightgray;
+    }
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -600,6 +611,7 @@ header {
         width: 70px;
         justify-content: center;
     }
+
 
     .links {
         display: flex;
